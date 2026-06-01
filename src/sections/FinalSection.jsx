@@ -124,15 +124,15 @@ export default function FinalSection() {
                 i === 0
                   ? "clamp(2rem, 5vw, 3.5rem)"
                   : i === LINES.length - 1
-                  ? "clamp(1.2rem, 3vw, 1.8rem)"
-                  : "clamp(1rem, 2.5vw, 1.4rem)",
+                    ? "clamp(1.2rem, 3vw, 1.8rem)"
+                    : "clamp(1rem, 2.5vw, 1.4rem)",
               fontWeight: i === 0 ? 700 : 400,
               color:
                 i === 0
                   ? "transparent"
                   : i === LINES.length - 1
-                  ? "var(--rose-gold-300)"
-                  : "var(--white-90)",
+                    ? "var(--rose-gold-300)"
+                    : "var(--white-90)",
               background: i === 0 ? "linear-gradient(135deg, #ffffff 30%, #ffa0c5 70%, #c9956b 100%)" : "none",
               WebkitBackgroundClip: i === 0 ? "text" : "unset",
               backgroundClip: i === 0 ? "text" : "unset",
@@ -160,7 +160,7 @@ export default function FinalSection() {
             flexWrap: "wrap",
           }}
         >
-          {"❤️💕💖💗💞🌙✨".split("").map((e, i) => (
+          {["❤️", "💕", "💖", "💗", "💞", "🌙", "✨"].map((e, i) => (
             <motion.span
               key={i}
               animate={{ y: [0, -12, 0], scale: [1, 1.2, 1] }}
