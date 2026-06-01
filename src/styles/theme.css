@@ -1,0 +1,56 @@
+/* ═══════════════════════════════════════════════════
+   THEME — Color tokens, fonts, design system
+═══════════════════════════════════════════════════ */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&family=Dancing+Script:wght@600;700&display=swap');
+
+:root {
+  /* ── Color Palette ── */
+  --navy-950: #05050f;
+  --navy-900: #0a0a1e;
+  --navy-800: #0d0d2b;
+  --navy-700: #111133;
+  --navy-600: #1a1a4e;
+
+  --pink-300: #ffa0c5;
+  --pink-400: #ff79a8;
+  --pink-500: #ff4d87;
+  --pink-600: #e91e63;
+
+  --rose-gold-100: #f5e6d3;
+  --rose-gold-300: #e8c5a0;
+  --rose-gold-500: #c9956b;
+  --rose-gold-700: #a0714a;
+
+  --gold-400: #f5d06e;
+  --gold-500: #e8b84b;
+
+  --white: #ffffff;
+  --white-90: rgba(255,255,255,0.9);
+  --white-70: rgba(255,255,255,0.7);
+  --white-40: rgba(255,255,255,0.4);
+  --white-15: rgba(255,255,255,0.15);
+  --white-08: rgba(255,255,255,0.08);
+
+  /* ── Gradients ── */
+  --gradient-hero: linear-gradient(135deg, #05050f 0%, #0d0d2b 50%, #1a0525 100%);
+  --gradient-pink: linear-gradient(135deg, #ff4d87, #e91e63);
+  --gradient-rose-gold: linear-gradient(135deg, #c9956b, #f5d06e);
+  --gradient-purple: linear-gradient(135deg, #6c63ff, #e91e8c);
+  --gradient-card: linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
+
+  /* ── Glass morphism ── */
+  --glass-bg: rgba(255,255,255,0.07);
+  --glass-border: rgba(255,255,255,0.12);
+  --glass-blur: blur(20px);
+
+  /* ── Typography ── */
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', -apple-system, sans-serif;
+  --font-script: 'Dancing Script', cursive;
+
+  /* ── Shadows ── */
+  --shadow-pink: 0 0 30px rgba(233,30,99,0.3);
+  --shadow-gold: 0 0 30px rgba(201,149,107,0.3);
+  --shadow-card: 0 8px 32px rgba(0,0,0,0.4);
+}

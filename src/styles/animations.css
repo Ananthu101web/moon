@@ -1,0 +1,108 @@
+/* ═══════════════════════════════════════════════════
+   ANIMATIONS — Keyframes & reusable animation classes
+═══════════════════════════════════════════════════ */
+
+/* ── Star twinkle ── */
+@keyframes twinkle {
+  0%, 100% { opacity: 0.2; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.4); }
+}
+
+/* ── Floating up (hearts, particles) ── */
+@keyframes floatUp {
+  0%   { transform: translateY(0) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; }
+}
+
+/* ── Gentle pulse ── */
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+}
+
+/* ── Heartbeat ── */
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  14% { transform: scale(1.3); }
+  28% { transform: scale(1); }
+  42% { transform: scale(1.3); }
+  70% { transform: scale(1); }
+}
+
+/* ── Shimmer (loading skeleton) ── */
+@keyframes shimmer {
+  0% { background-position: -1000px 0; }
+  100% { background-position: 1000px 0; }
+}
+
+/* ── Spin ── */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* ── Falling hearts ── */
+@keyframes fall {
+  0%   { top: -10%; opacity: 1; }
+  100% { top: 110%; opacity: 0; }
+}
+
+/* ── Glow ── */
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 10px rgba(233,30,99,0.4); }
+  50% { box-shadow: 0 0 30px rgba(233,30,99,0.8), 0 0 60px rgba(233,30,99,0.4); }
+}
+
+/* ── Float (gentle bob) ── */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+/* ── Count up number reveal ── */
+@keyframes countUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Utility classes ── */
+.animate-pulse { animation: pulse 2s ease-in-out infinite; }
+.animate-heartbeat { animation: heartbeat 1.5s ease-in-out infinite; }
+.animate-float { animation: float 3s ease-in-out infinite; }
+.animate-glow { animation: glow 2s ease-in-out infinite; }
+.animate-spin { animation: spin 1s linear infinite; }
+
+/* ── Gift box lid open ── */
+@keyframes lidOpen {
+  0%   { transform: rotateX(0deg); transform-origin: top; }
+  100% { transform: rotateX(-120deg); transform-origin: top; }
+}
+
+/* ── Envelope open ── */
+@keyframes envelopeOpen {
+  0%   { transform: rotateX(0deg); }
+  100% { transform: rotateX(-180deg); }
+}
+
+/* ── Letter slide out ── */
+@keyframes letterSlide {
+  0%   { transform: translateY(0); opacity: 0; }
+  100% { transform: translateY(-20px); opacity: 1; }
+}
+
+/* ── Firework burst ── */
+@keyframes burst {
+  0%   { transform: scale(0); opacity: 1; }
+  100% { transform: scale(3); opacity: 0; }
+}
+
+/* ── Moving heart along path ── */
+@keyframes movePath {
+  0%   { offset-distance: 0%; }
+  100% { offset-distance: 100%; }
+}
+
+.moving-heart {
+  animation: movePath 4s linear infinite;
+  offset-path: path('M 100 200 Q 400 50 700 300');
+}
